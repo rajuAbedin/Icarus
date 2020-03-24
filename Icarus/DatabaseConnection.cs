@@ -17,16 +17,19 @@ namespace Icarus
         {
             using (SQLiteConnection cnn = new SQLiteConnection(ConnectionString()))
             {
+                DataSet dataSet = new DataSet();
                 try
                 {
                     var sqlAdapter = new SQLiteDataAdapter(query, cnn);
                     var builder = new SQLiteCommandBuilder(sqlAdapter);
-                    DataSet
+                    
+                    sqlAdapter.Fill(dataSet, "info");
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.ToString());
                 }
+                return dataSet;
             }
         }
         public static void InsetDataDB(string query)
