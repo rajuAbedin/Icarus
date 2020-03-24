@@ -13,8 +13,9 @@ namespace Icarus
 {
     public class DatabaseConnection
     {
-        public static DataSet GetDataDB(string query)
+        public static DataSet GetDataDB(string value, string tableName, string credential)
         {
+            string query = "Selecet " + value + " from " + tableName + " where " + credential + " );";
             using (SQLiteConnection cnn = new SQLiteConnection(ConnectionString()))
             {
                 DataSet dataSet = new DataSet();
@@ -32,8 +33,9 @@ namespace Icarus
                 return dataSet;
             }
         }
-        public static void InsetDataDB(string query)
+        public static void InsetDataDB(string tableName, string variableName, string variableValue)
         {
+            string query = "Inser into " + tableName + "(" + variableName + ") values (" + ValueSplitter(variableValue) + " );";
             using (SQLiteConnection con = new SQLiteConnection(ConnectionString()))
             {
                 try
@@ -50,6 +52,16 @@ namespace Icarus
                 }
 
             }
+        }
+        private static string ValueSplitter(string Values)
+        {
+            String[] array = Values.Split(',');
+            String variables = "";
+            for(int i = 0; i < array.Length; i++)
+            {
+                variables = variables + "'" + array[i] +"' , ";
+            }
+            return variables;
         }
         private static string ConnectionString(string id = "Icarus")
         {

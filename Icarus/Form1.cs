@@ -15,7 +15,7 @@ namespace Icarus
         public Form1()
         {
             InitializeComponent();
+            DatabaseConnection.InsetDataDB("","","");
         }
-
     }
 }
