@@ -15,7 +15,18 @@ namespace Icarus
         public Form1()
         {
             InitializeComponent();
-            DatabaseConnection.InsetDataDB("","","");
+            checkLicense();
+            //DatabaseConnection.InsetDataDB("ShopInfo", "OwnerName, OwnerSurname, Key, Validated", "Raju, Minhajul Abedin, 22SDGDSFG5FHHHV2, 1");
+        }
+        public void checkLicense()
+        {
+            DataSet data = DatabaseConnection.GetDataDB("*", "ShopInfo", "ID = 1");
+            if(data.Tables[0].Rows.Count == 0)
+            {
+                InitialForm initialForm = new InitialForm();
+                initialForm.ShowDialog();
+            }
+            
         }
     }
 }

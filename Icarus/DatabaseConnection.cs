@@ -15,7 +15,7 @@ namespace Icarus
     {
         public static DataSet GetDataDB(string value, string tableName, string credential)
         {
-            string query = "Selecet " + value + " from " + tableName + " where " + credential + " );";
+            string query = "Select " + value + " from " + tableName + " where " + credential + ";";
             using (SQLiteConnection cnn = new SQLiteConnection(ConnectionString()))
             {
                 DataSet dataSet = new DataSet();
@@ -24,7 +24,7 @@ namespace Icarus
                     var sqlAdapter = new SQLiteDataAdapter(query, cnn);
                     var builder = new SQLiteCommandBuilder(sqlAdapter);
                     
-                    sqlAdapter.Fill(dataSet, "info");
+                    sqlAdapter.Fill(dataSet, "data");
                 }
                 catch (Exception ex)
                 {
@@ -35,7 +35,7 @@ namespace Icarus
         }
         public static void InsetDataDB(string tableName, string variableName, string variableValue)
         {
-            string query = "Inser into " + tableName + "(" + variableName + ") values (" + ValueSplitter(variableValue) + " );";
+            string query = "Insert into " + tableName + " (" + variableName + ") values (" + ValueSplitter(variableValue) + " );";
             using (SQLiteConnection con = new SQLiteConnection(ConnectionString()))
             {
                 try
@@ -59,7 +59,15 @@ namespace Icarus
             String variables = "";
             for(int i = 0; i < array.Length; i++)
             {
-                variables = variables + "'" + array[i] +"' , ";
+                variables = variables + "'" + array[i];
+                if(i < array.Length -1)
+                {
+                    variables = variables + "', ";
+                }
+                else
+                {
+                    variables = variables + "'";
+                }
             }
             return variables;
         }
