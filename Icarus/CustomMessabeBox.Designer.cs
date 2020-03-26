@@ -62,7 +62,7 @@
             this.closeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.closeButton.TabIndex = 1;
             this.closeButton.TabStop = false;
-            this.closeButton.Zoom = 5;
+            this.closeButton.Zoom = 10;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // messageBar

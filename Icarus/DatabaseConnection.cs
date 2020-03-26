@@ -20,6 +20,7 @@ namespace Icarus
             {
                 query = query + " where " + credential;
             }
+            //MessageBox.Show(query);
             using (SQLiteConnection cnn = new SQLiteConnection(ConnectionString()))
             {
                 DataSet dataSet = new DataSet();

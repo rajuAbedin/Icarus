@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,7 @@ namespace Icarus
         public InitialForm()
         {
             InitializeComponent();
+            //this.Icon = new Icon(System.AppDomain.CurrentDomain.BaseDirectory + "/Images/logo.png");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -62,11 +64,22 @@ namespace Icarus
                 }
                 else
                 {
-                    messabeBox.messageText("Password do not match!");
+                    messabeBox.messageText("Passwords do not match!");
                     messabeBox.messageType("Warning");
                     messabeBox.messagebarColour("Red");
                     messabeBox.ShowDialog();
                 }
+            }
+        }
+
+        private void selectImgBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult result = openFileDialog1.ShowDialog();
+            if(result == DialogResult.OK)
+            {
+                string source = openFileDialog1.FileName;
+                string newFile = System.AppDomain.CurrentDomain.BaseDirectory + "/Images/logo.png";
+                File.Copy(source, newFile,true);
             }
         }
     }

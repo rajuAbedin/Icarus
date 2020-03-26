@@ -28,6 +28,11 @@ namespace Icarus
                 InitialForm initialForm = new InitialForm();
                 initialForm.ShowDialog();
             }
+            else
+            {
+                login login = new login();
+                login.ShowDialog();
+            }
             
         }
         private void changeTitle()

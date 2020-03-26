@@ -2155,19 +2155,17 @@
   <data name="signUp.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJkAAAA3CAYAAAAfSugkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKiSURBVHhe7Z1NS1RhGIb7Re3atGvVqjYFQbQoFxIUGIER
-        EdEiopBQFyNEhkEfJhYjBolIMYZDMdGHSDgJ2ucIatEhXEgtnrjfOZ6a5jiUvs/uuuCGgTPnrC7O+7xn
-        mPtsS5LECPEMkhH3IBlxD5IR9yAZcQ+SEfe0lGzpy4rdfzFhJ4tX7PDtc7b76jHb3nWAkOCCnDh+75IN
-        Vsbs8/JirkPKhpKNz0yFC3WO9tjYbNmef3xjtWTZAIRckBOP5ip29mEhuCLZ8lxqkkxGnh7ttaPDF21l
-        9Vt6SYDWfF9bDbK1D12w+cUPDU41SCbB9g102shMKT0V4P+YWnhlB2+eseqn+XzJdAdDMNgqWkY1rzVJ
-        phlMSyRADHqe3LG+yaHfkmkXqcGNGQxisfbzh+2/ccqm31frkmlXoKENICbXn43Y5YmBumR61qGtKEBM
-        qkvvwkYySLbnWoctfK2lhwDioCVzR/ehumQ7e4+E5xwAsdGvA0EyfQDwAMnAHSQDd5AM3EEycAfJwB0k
-        A3eQDNxBMnAHycAdJAN3kAzcQTJwB8nAHSQDd5AM3EEycAfJwB0kA3eQDNxBMnAHycCdTDL9N07/kQOI
-        TSaZejAouAMPMslUXKZeKYCYqJVA7QRBskLpbqj6AYiJuu7UeRckUyve3v4TzGUQlY5ilz14XapLpnQ/
-        vmV95eH0MMDWUJm1WtPlViaZivBUwThdm0u/BrA5VKaolXG9dj2TTFErntrxqJGCzSLB2gbPW2m2knnV
-        IJlSfvsyFJf1Py2mpwH8GypS1B3sT8GUJskULZ2qYZSR2iHQJQsboV47zV96qYgaO/PeTJIr2XpkpLag
-        uwrt4aEaIX9HBYoa8PV6pDyHlJaSERIjSEbcg2TEPUhG3INkxDmJ/QLuiACvwpKYpwAAAABJRU5ErkJg
-        gg==
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJESURBVHhe7d29S1tRHMZx/6JuTm6d3JyKS6Y6iOCgiy7t
+        4NRBwZchg+DgoBTqEHDIVCiiUOogIqI4KAgZVMQiDqLDKc8x52JMcivxPJPfD1wI8WX6cs65V/KzLwBm
+        RAY7IoMdkcGOyGBHZLArjez+8SHUj3bC1OZiGPk+EwaXx8OH2WEurtiCmpiozYXawa9we3/XrKZd18i2
+        T/fiL1JgCm33/DA0/l42v4r3Ti2oiZ8nf8LXejW2otg6aYtMReqHxja+hau7m+a7QLmybloi0zd+Wp3u
+        WiTwP9oBK2tfWna9lshUIoHhrbSN6ryWFJGpQC11QA4LW+th5Xctvo6R6S5SBzfOYMhFTenodXrdeIpM
+        W6S2SiAnrWRa0WJketahW1Egp+OLs7iaxciGVibjsgbkpC2zf77yFNnA0ufSJ7ZAr/TXgRiZXgAORAY7
+        IoMdkcGOyGBHZLAjMtgRGeyIDHZEBjsigx2RwY7IYEdksCMy2BEZ7IgMdkQGOyKDHZHBjshgR2SwKyLT
+        Z+P0GTkgtyIyzcFgwB0cisg0zUdTfYCcNJVA0wliZGkwBpBTGuQTI9NWqeI4lyGnNMgnRibVnR/xAnJI
+        U9OliEyrmEYw7jdOmu8AvdEwRe2MaYhPEZnooJam4wG9UGBarDQ3NmmJTLSSKbQ07xN4LZ2/tII9D0za
+        IhNtnbrbVJG6Q2CWLLrRlpjOXzrod5pz1zGyREXqFvRjdTQ+VOPienlpgGL6rzXdlEYG5EBksCMy2BEZ
+        7IgMZiH8AwrHQk6TXyUEAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="keyTxt.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

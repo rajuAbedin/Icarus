@@ -33,6 +33,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.selectImgBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.contactNumberTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -45,7 +46,6 @@
             this.firstnameTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.shopNametxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.closeButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.selectImgBtn = new Bunifu.Framework.UI.BunifuThinButton2();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
@@ -85,6 +85,32 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(973, 487);
             this.panel1.TabIndex = 0;
+            // 
+            // selectImgBtn
+            // 
+            this.selectImgBtn.ActiveBorderThickness = 1;
+            this.selectImgBtn.ActiveCornerRadius = 20;
+            this.selectImgBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
+            this.selectImgBtn.ActiveForecolor = System.Drawing.Color.White;
+            this.selectImgBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
+            this.selectImgBtn.BackColor = System.Drawing.Color.White;
+            this.selectImgBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("selectImgBtn.BackgroundImage")));
+            this.selectImgBtn.ButtonText = "Select shop logo";
+            this.selectImgBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.selectImgBtn.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selectImgBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
+            this.selectImgBtn.IdleBorderThickness = 1;
+            this.selectImgBtn.IdleCornerRadius = 20;
+            this.selectImgBtn.IdleFillColor = System.Drawing.Color.White;
+            this.selectImgBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
+            this.selectImgBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
+            this.selectImgBtn.Location = new System.Drawing.Point(99, 360);
+            this.selectImgBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.selectImgBtn.Name = "selectImgBtn";
+            this.selectImgBtn.Size = new System.Drawing.Size(167, 55);
+            this.selectImgBtn.TabIndex = 14;
+            this.selectImgBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.selectImgBtn.Click += new System.EventHandler(this.selectImgBtn_Click);
             // 
             // label2
             // 
@@ -494,31 +520,6 @@
             this.closeButton.TabStop = false;
             this.closeButton.Zoom = 5;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // selectImgBtn
-            // 
-            this.selectImgBtn.ActiveBorderThickness = 1;
-            this.selectImgBtn.ActiveCornerRadius = 20;
-            this.selectImgBtn.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
-            this.selectImgBtn.ActiveForecolor = System.Drawing.Color.White;
-            this.selectImgBtn.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
-            this.selectImgBtn.BackColor = System.Drawing.Color.White;
-            this.selectImgBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("selectImgBtn.BackgroundImage")));
-            this.selectImgBtn.ButtonText = "Select shop logo";
-            this.selectImgBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.selectImgBtn.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectImgBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
-            this.selectImgBtn.IdleBorderThickness = 1;
-            this.selectImgBtn.IdleCornerRadius = 20;
-            this.selectImgBtn.IdleFillColor = System.Drawing.Color.White;
-            this.selectImgBtn.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
-            this.selectImgBtn.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(113)))), ((int)(((byte)(37)))));
-            this.selectImgBtn.Location = new System.Drawing.Point(99, 360);
-            this.selectImgBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.selectImgBtn.Name = "selectImgBtn";
-            this.selectImgBtn.Size = new System.Drawing.Size(167, 55);
-            this.selectImgBtn.TabIndex = 14;
-            this.selectImgBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // openFileDialog1
             // 
