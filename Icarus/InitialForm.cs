@@ -12,10 +12,10 @@ namespace Icarus
 {
     public partial class InitialForm : Form
     {
+        CustomMessabeBox messabeBox = new CustomMessabeBox();
         public InitialForm()
         {
             InitializeComponent();
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -31,24 +31,41 @@ namespace Icarus
         private void signUp_Click(object sender, EventArgs e)
         {
             string shopName = shopNametxt.Text;
-            string firstname = shopNametxt.Text;
-            string surname = shopNametxt.Text;
-            string contactNumber = shopNametxt.Text;
-            string username = shopNametxt.Text;
-            string password = shopNametxt.Text;
-            string confPassword = shopNametxt.Text;
-            string key = shopNametxt.Text;
+            string firstname = firstnameTxt.Text;
+            string surname = surnameTxt.Text;
+            string contactNumber = contactNumberTxt.Text;
+            string username = usernametxt.Text;
+            string password = passwordTxt.Text;
+            string confPassword = confPasswordTxt.Text;
+            string key = keyTxt.Text;
 
             if (String.IsNullOrEmpty(shopName) || String.IsNullOrEmpty(firstname) || String.IsNullOrEmpty(surname) || String.IsNullOrEmpty(contactNumber) || 
                 String.IsNullOrEmpty(username) || String.IsNullOrEmpty(password) || String.IsNullOrEmpty(confPassword) || String.IsNullOrEmpty(key))
             {
-                MessageBox.Show("Please feel all the box");
+                messabeBox.messageText("Some information are empty!");
+                messabeBox.messageType("Warning");
+                messabeBox.messagebarColour("Red");
+                messabeBox.ShowDialog();
             }
             else
             {
                 if (password.Equals(confPassword))
                 {
-                    MessageBox.Show("Working!!");
+                    
+                    DatabaseConnection.InsetDataDB("ShopInfo","ShopName,OwnerName,OwnerSurname,Key,Validated",
+                        shopName + "," + firstname + "," + surname + "," + key + "," + "1");
+                    DatabaseConnection.InsetDataDB("Users", "Firstname, Surname, Username, Password, Role, ContactNumber",
+                        firstname + "," + surname + "," + username.ToLower() + "," + password + "," + "SuperAdmin" + "," + contactNumber);
+                    this.Close();
+                    messabeBox.messageText("Thank you for using Icarus");
+                    messabeBox.ShowDialog();
+                }
+                else
+                {
+                    messabeBox.messageText("Password do not match!");
+                    messabeBox.messageType("Warning");
+                    messabeBox.messagebarColour("Red");
+                    messabeBox.ShowDialog();
                 }
             }
         }

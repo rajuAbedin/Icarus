@@ -33,6 +33,11 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.contactNumberTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.passwordTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.signUp = new Bunifu.Framework.UI.BunifuThinButton2();
             this.keyTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.confPasswordTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.usernametxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
@@ -40,11 +45,6 @@
             this.firstnameTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.shopNametxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.closeButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.signUp = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.passwordTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.contactNumberTxt = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.closeButton)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,142 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(973, 487);
             this.panel1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Roboto Lt", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(52)))));
+            this.label2.Location = new System.Drawing.Point(109, 126);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 33);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "SIGN UP";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Roboto Lt", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.label1.Location = new System.Drawing.Point(15, 126);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(105, 33);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "ADMIN";
+            // 
+            // contactNumberTxt
+            // 
+            this.contactNumberTxt.AcceptsReturn = false;
+            this.contactNumberTxt.AcceptsTab = false;
+            this.contactNumberTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.contactNumberTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.contactNumberTxt.BackColor = System.Drawing.Color.White;
+            this.contactNumberTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contactNumberTxt.BackgroundImage")));
+            this.contactNumberTxt.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.contactNumberTxt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.contactNumberTxt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(52)))));
+            this.contactNumberTxt.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.contactNumberTxt.BorderRadius = 1;
+            this.contactNumberTxt.BorderThickness = 2;
+            this.contactNumberTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.contactNumberTxt.DefaultFont = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNumberTxt.DefaultText = "";
+            this.contactNumberTxt.FillColor = System.Drawing.Color.White;
+            this.contactNumberTxt.HideSelection = true;
+            this.contactNumberTxt.IconLeft = null;
+            this.contactNumberTxt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.contactNumberTxt.IconPadding = 10;
+            this.contactNumberTxt.IconRight = null;
+            this.contactNumberTxt.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.contactNumberTxt.Location = new System.Drawing.Point(227, 244);
+            this.contactNumberTxt.MaxLength = 32767;
+            this.contactNumberTxt.MinimumSize = new System.Drawing.Size(100, 35);
+            this.contactNumberTxt.Modified = false;
+            this.contactNumberTxt.Name = "contactNumberTxt";
+            this.contactNumberTxt.PasswordChar = '\0';
+            this.contactNumberTxt.ReadOnly = false;
+            this.contactNumberTxt.SelectedText = "";
+            this.contactNumberTxt.SelectionLength = 0;
+            this.contactNumberTxt.SelectionStart = 0;
+            this.contactNumberTxt.ShortcutsEnabled = true;
+            this.contactNumberTxt.Size = new System.Drawing.Size(200, 35);
+            this.contactNumberTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.contactNumberTxt.TabIndex = 6;
+            this.contactNumberTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.contactNumberTxt.TextMarginLeft = 5;
+            this.contactNumberTxt.TextPlaceholder = "Contact Number";
+            this.contactNumberTxt.UseSystemPasswordChar = false;
+            // 
+            // passwordTxt
+            // 
+            this.passwordTxt.AcceptsReturn = false;
+            this.passwordTxt.AcceptsTab = false;
+            this.passwordTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.passwordTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.passwordTxt.BackColor = System.Drawing.Color.White;
+            this.passwordTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("passwordTxt.BackgroundImage")));
+            this.passwordTxt.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
+            this.passwordTxt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.passwordTxt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(52)))));
+            this.passwordTxt.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.passwordTxt.BorderRadius = 1;
+            this.passwordTxt.BorderThickness = 2;
+            this.passwordTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.passwordTxt.DefaultFont = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTxt.DefaultText = "";
+            this.passwordTxt.FillColor = System.Drawing.Color.White;
+            this.passwordTxt.HideSelection = true;
+            this.passwordTxt.IconLeft = null;
+            this.passwordTxt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.passwordTxt.IconPadding = 10;
+            this.passwordTxt.IconRight = null;
+            this.passwordTxt.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.passwordTxt.Location = new System.Drawing.Point(21, 285);
+            this.passwordTxt.MaxLength = 32767;
+            this.passwordTxt.MinimumSize = new System.Drawing.Size(100, 35);
+            this.passwordTxt.Modified = false;
+            this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.PasswordChar = '\0';
+            this.passwordTxt.ReadOnly = false;
+            this.passwordTxt.SelectedText = "";
+            this.passwordTxt.SelectionLength = 0;
+            this.passwordTxt.SelectionStart = 0;
+            this.passwordTxt.ShortcutsEnabled = true;
+            this.passwordTxt.Size = new System.Drawing.Size(200, 35);
+            this.passwordTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.passwordTxt.TabIndex = 7;
+            this.passwordTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.passwordTxt.TextMarginLeft = 5;
+            this.passwordTxt.TextPlaceholder = "Password";
+            this.passwordTxt.UseSystemPasswordChar = false;
+            // 
+            // signUp
+            // 
+            this.signUp.ActiveBorderThickness = 1;
+            this.signUp.ActiveCornerRadius = 20;
+            this.signUp.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.signUp.ActiveForecolor = System.Drawing.Color.White;
+            this.signUp.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.signUp.BackColor = System.Drawing.SystemColors.Control;
+            this.signUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signUp.BackgroundImage")));
+            this.signUp.ButtonText = "Sign Up";
+            this.signUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.signUp.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUp.ForeColor = System.Drawing.Color.SeaGreen;
+            this.signUp.IdleBorderThickness = 1;
+            this.signUp.IdleCornerRadius = 20;
+            this.signUp.IdleFillColor = System.Drawing.Color.White;
+            this.signUp.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.signUp.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.signUp.Location = new System.Drawing.Point(274, 360);
+            this.signUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.signUp.Name = "signUp";
+            this.signUp.Size = new System.Drawing.Size(153, 55);
+            this.signUp.TabIndex = 0;
+            this.signUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.signUp.Click += new System.EventHandler(this.signUp_Click);
             // 
             // keyTxt
             // 
@@ -356,142 +492,6 @@
             this.closeButton.Zoom = 5;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
-            // signUp
-            // 
-            this.signUp.ActiveBorderThickness = 1;
-            this.signUp.ActiveCornerRadius = 20;
-            this.signUp.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.signUp.ActiveForecolor = System.Drawing.Color.White;
-            this.signUp.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.signUp.BackColor = System.Drawing.Color.Transparent;
-            this.signUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signUp.BackgroundImage")));
-            this.signUp.ButtonText = "Sign Up";
-            this.signUp.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.signUp.Font = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signUp.ForeColor = System.Drawing.Color.SeaGreen;
-            this.signUp.IdleBorderThickness = 1;
-            this.signUp.IdleCornerRadius = 20;
-            this.signUp.IdleFillColor = System.Drawing.Color.White;
-            this.signUp.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.signUp.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.signUp.Location = new System.Drawing.Point(274, 360);
-            this.signUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.signUp.Name = "signUp";
-            this.signUp.Size = new System.Drawing.Size(153, 55);
-            this.signUp.TabIndex = 0;
-            this.signUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.signUp.Click += new System.EventHandler(this.signUp_Click);
-            // 
-            // passwordTxt
-            // 
-            this.passwordTxt.AcceptsReturn = false;
-            this.passwordTxt.AcceptsTab = false;
-            this.passwordTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.passwordTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.passwordTxt.BackColor = System.Drawing.Color.White;
-            this.passwordTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("passwordTxt.BackgroundImage")));
-            this.passwordTxt.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.passwordTxt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.passwordTxt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(52)))));
-            this.passwordTxt.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
-            this.passwordTxt.BorderRadius = 1;
-            this.passwordTxt.BorderThickness = 2;
-            this.passwordTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.passwordTxt.DefaultFont = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTxt.DefaultText = "";
-            this.passwordTxt.FillColor = System.Drawing.Color.White;
-            this.passwordTxt.HideSelection = true;
-            this.passwordTxt.IconLeft = null;
-            this.passwordTxt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.passwordTxt.IconPadding = 10;
-            this.passwordTxt.IconRight = null;
-            this.passwordTxt.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.passwordTxt.Location = new System.Drawing.Point(21, 285);
-            this.passwordTxt.MaxLength = 32767;
-            this.passwordTxt.MinimumSize = new System.Drawing.Size(100, 35);
-            this.passwordTxt.Modified = false;
-            this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.PasswordChar = '\0';
-            this.passwordTxt.ReadOnly = false;
-            this.passwordTxt.SelectedText = "";
-            this.passwordTxt.SelectionLength = 0;
-            this.passwordTxt.SelectionStart = 0;
-            this.passwordTxt.ShortcutsEnabled = true;
-            this.passwordTxt.Size = new System.Drawing.Size(200, 35);
-            this.passwordTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.passwordTxt.TabIndex = 7;
-            this.passwordTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.passwordTxt.TextMarginLeft = 5;
-            this.passwordTxt.TextPlaceholder = "Password";
-            this.passwordTxt.UseSystemPasswordChar = false;
-            // 
-            // contactNumberTxt
-            // 
-            this.contactNumberTxt.AcceptsReturn = false;
-            this.contactNumberTxt.AcceptsTab = false;
-            this.contactNumberTxt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.contactNumberTxt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.contactNumberTxt.BackColor = System.Drawing.Color.White;
-            this.contactNumberTxt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contactNumberTxt.BackgroundImage")));
-            this.contactNumberTxt.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.contactNumberTxt.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.contactNumberTxt.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(52)))));
-            this.contactNumberTxt.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
-            this.contactNumberTxt.BorderRadius = 1;
-            this.contactNumberTxt.BorderThickness = 2;
-            this.contactNumberTxt.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.contactNumberTxt.DefaultFont = new System.Drawing.Font("Roboto", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contactNumberTxt.DefaultText = "";
-            this.contactNumberTxt.FillColor = System.Drawing.Color.White;
-            this.contactNumberTxt.HideSelection = true;
-            this.contactNumberTxt.IconLeft = null;
-            this.contactNumberTxt.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.contactNumberTxt.IconPadding = 10;
-            this.contactNumberTxt.IconRight = null;
-            this.contactNumberTxt.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.contactNumberTxt.Location = new System.Drawing.Point(227, 244);
-            this.contactNumberTxt.MaxLength = 32767;
-            this.contactNumberTxt.MinimumSize = new System.Drawing.Size(100, 35);
-            this.contactNumberTxt.Modified = false;
-            this.contactNumberTxt.Name = "contactNumberTxt";
-            this.contactNumberTxt.PasswordChar = '\0';
-            this.contactNumberTxt.ReadOnly = false;
-            this.contactNumberTxt.SelectedText = "";
-            this.contactNumberTxt.SelectionLength = 0;
-            this.contactNumberTxt.SelectionStart = 0;
-            this.contactNumberTxt.ShortcutsEnabled = true;
-            this.contactNumberTxt.Size = new System.Drawing.Size(200, 35);
-            this.contactNumberTxt.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.contactNumberTxt.TabIndex = 6;
-            this.contactNumberTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.contactNumberTxt.TextMarginLeft = 5;
-            this.contactNumberTxt.TextPlaceholder = "Contact Number";
-            this.contactNumberTxt.UseSystemPasswordChar = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Roboto Lt", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(27)))), ((int)(((byte)(36)))));
-            this.label1.Location = new System.Drawing.Point(15, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 33);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "ADMIN";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Roboto Lt", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(52)))));
-            this.label2.Location = new System.Drawing.Point(109, 126);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 33);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "SIGN UP";
-            // 
             // InitialForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -500,6 +500,7 @@
             this.ClientSize = new System.Drawing.Size(973, 487);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "InitialForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InitialForm";

@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomMessabeBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomMessabeBox.Designer.cs">
+      <DependentUpon>CustomMessabeBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseConnection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -88,6 +94,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="Resources\buttonBG.png" />
     <None Include="Resources\buttonBGHover.png" />
+    <EmbeddedResource Include="CustomMessabeBox.resx">
+      <DependentUpon>CustomMessabeBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

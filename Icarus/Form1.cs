@@ -14,19 +14,26 @@ namespace Icarus
     {
         public Form1()
         {
-            InitializeComponent();
             checkLicense();
-            //DatabaseConnection.InsetDataDB("ShopInfo", "OwnerName, OwnerSurname, Key, Validated", "Raju, Minhajul Abedin, 22SDGDSFG5FHHHV2, 1");
+            InitializeComponent();
+            changeTitle();
+            this.WindowState = FormWindowState.Maximized;
+
         }
         public void checkLicense()
         {
-            DataSet data = DatabaseConnection.GetDataDB("*", "ShopInfo", "ID = 1");
+            DataSet data = DatabaseConnection.GetDataDB("*", "ShopInfo", "");
             if(data.Tables[0].Rows.Count == 0)
             {
                 InitialForm initialForm = new InitialForm();
                 initialForm.ShowDialog();
             }
             
+        }
+        private void changeTitle()
+        {
+            DataSet data = DatabaseConnection.GetDataDB("*", "ShopInfo", "");
+            this.Text = data.Tables["data"].Rows[0][1].ToString() + " | Powered by Icarus";
         }
     }
 }

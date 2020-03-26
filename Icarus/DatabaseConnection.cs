@@ -15,7 +15,11 @@ namespace Icarus
     {
         public static DataSet GetDataDB(string value, string tableName, string credential)
         {
-            string query = "Select " + value + " from " + tableName + " where " + credential + ";";
+            string query = "Select " + value + " from " + tableName;
+            if (!credential.Equals(""))
+            {
+                query = query + " where " + credential;
+            }
             using (SQLiteConnection cnn = new SQLiteConnection(ConnectionString()))
             {
                 DataSet dataSet = new DataSet();
